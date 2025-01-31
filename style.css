@@ -39,3 +39,31 @@
 .assistance .text {
     padding-inline: 10px;
 }
+
+/* .hero-section,
+.hero-area {
+    width: 100%;
+} */
+
+.hero-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-area h1 {
+    font-size: 70px;
+}
+
+.text-area {
+    max-width: 45%;
+}
+
+.image-area {
+    max-width: 55%;
+}
+
+.image-area img {
+    width: 100%;
+    height: 500px;
+}

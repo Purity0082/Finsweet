@@ -4,10 +4,18 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
 .container {
     width: 80%;
     margin: 0 auto;
-    /* padding-block: px; */
+    /* padding-block: 30px; */
 }
 
 .nav--container {
@@ -34,6 +42,13 @@
 
 .assistance {
     display: flex;
+    width: 30%;
+    justify-content: ;
+}
+
+.assistance img {
+    width: 20%;
+    /* background-image: url(/images/phone-logo.png); */
 }
 
 .assistance .text {
@@ -49,6 +64,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    /* border: 1px solid red; */
 }
 
 .hero-area h1 {
@@ -63,7 +79,246 @@
     max-width: 55%;
 }
 
-.image-area img {
+/* .img {
     width: 100%;
-    height: 500px;
+} */
+
+
+/* .image-area img {
+    width: 100%;
+    height: 300px;
+} */
+
+.image-area img {
+    background-image: url(/images/Finsweet-mechanic.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 200%;
+    height: 100%;
+}
+
+.time-section {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 5px;
+    align-content: center;
+}
+
+.time-section img {
+    width: 7%; 
+}
+
+button {
+    background-color: #ff6024;
+    padding: 15px 25px;
+    border: 1px solid #ff6024;
+    margin-block: 10px;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+
+small {
+    color: #ccc;
+}
+
+/* .quote-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-block: 25px;
+} */
+
+
+.quote-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    /* width: 100%; */
+    margin-top: 20px;
+    background-color: #e2e6e9;
+}
+
+.quote-area ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.quote-area ul li img {
+    width: 25%;
+}
+
+.list-area {
+    width: 46%;
+    /* border: 1px solid red; */
+}
+
+.form-area {
+    width: 46%;
+    /* border: 1px solid red; */
+}
+
+.form-area div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-area h2 {
+    width: 100%;
+}
+
+.form-area .input-box {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+/* MOBILE VIEW */
+@media (max-width: 425px) {
+    .container {
+        width: 90%;
+        
+    }
+
+    header {
+        background-color: aqua;
+    }
+
+    .navigation, .assistance {
+        display: none;
+    }
+
+    .nav--container .logo {
+        width: 100%;
+    }
+    
+    .nav--container .logo img {
+        width: 40%;
+    }
+
+    .image-area {
+        display: none;
+    }
+
+    .hero-area {
+        background-image: url(/images/Finsweet-mechanic.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        object-fit: fill;
+        /* background-size: 500px 80vh; */
+        width: 100%;
+    }
+
+    .text-area {
+        max-width: 90%;
+    }
+
+    .text-area h1 {
+        color: #fff;
+        font-size: 40px;
+        margin-top: 60px;
+        margin-bottom: 30px;
+        font-family: inherit;
+        font-weight: 500;
+    }
+    
+    .info {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .info p {
+        color: #fff;
+    }
+
+    .quote-area {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding-block: 25px;
+    }
+
+    .quote-area .list-area {
+        max-width: 95%;
+        padding-block: 20px;
+    }
+
+    .quote-area .form-area {
+        width: 95%;
+    }
+
+    .quote-area h2 {
+        margin-bottom: 15px;
+    }
+}
+
+
+/* TABLET VIEW */
+@media (min-width: 426px) and (max-width: 998px) {
+    .container {
+        width: 95%;
+        margin: 0 auto;
+        padding-block: 10px;
+    }
+    /* header .logo {
+        width: 50%;
+    } */
+
+    header .logo img {
+        width: 100px;
+    }
+
+    .navigation ul {
+        display: none;
+    }
+
+    .text-area h1 {
+        font-size: 30px;
+        color: #fff;
+    }
+
+    .image-area {
+        display: none;
+    }
+
+    .hero-area {
+        background-image: url(/images/Finsweet-mechanic.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        object-fit: fill;
+        width: 100%;
+        min-height: 60dvh;
+    }
+
+    .text-area {
+        max-width: 90%;
+    }
+
+    .info p {
+        color: #fff;
+    }
+
+    .quote-area {
+        align-items: start;
+        width: 100%;
+        margin-top: 20px;
+        padding: 15px;
+    }
 }
